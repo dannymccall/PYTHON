@@ -8,15 +8,23 @@ def password_generator():
 	try:  	
 		#declaring a variable pw as a string without initialising
 			pw = str()
+			
 			#Getting the input from the text box
+			
 			length = text_field_1.get()
 			if length == '':
 				messagebox.showerror('error', 'Enter your length of characters')
+			
 			#declaring a variable called characters to hold the password characters
+			
 			charactors = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@%!"
+			
 			#Converting the length to an integer 
+			
 			number = int(length)
+			
 			#Looping through length 
+			
 			for i in range(number):
 			
 				#Generating the password
